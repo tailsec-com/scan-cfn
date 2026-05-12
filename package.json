@@ -1,0 +1,36 @@
+{
+  "name": "@tailsec/scan-cfn",
+  "version": "0.1.0",
+  "description": "Security scanner for AWS CloudFormation templates",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "bin": {
+    "tailsec-scan-cfn": "./src/cli.ts"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js tests/",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tailsec-com/scan-cfn"
+  },
+  "keywords": [
+    "security",
+    "cloudformation",
+    "aws",
+    "scanner"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.0.0"
+  }
+}
